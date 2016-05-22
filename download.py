@@ -11,7 +11,7 @@ def download_data(url, name, path='data'):
         os.mkdir(path)
 
     response = requests.get(url)
-    with open(os.path.join(path, name), 'w') as f:
+    with open(os.path.join(path, name), 'wb') as f:
         f.write(response.content)
 
 
