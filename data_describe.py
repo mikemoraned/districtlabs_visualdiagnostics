@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the room occupancy dataset
-occupancy = os.path.join('data','occupancy_data','datatraining.txt')
+occupancy = os.path.join('data','occupancy','datatraining.txt')
 occupancy = pd.read_csv(occupancy, sep=',')
 occupancy.columns = [
     'date', 'temp', 'humid', 'light', 'co2', 'hratio', 'occupied'
