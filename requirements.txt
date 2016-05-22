@@ -1,5 +1,14 @@
+cycler==0.10.0
+matplotlib==1.5.1
 numpy==1.11.0
+pandas==0.18.1
+pyparsing==2.1.4
+python-dateutil==2.5.3
+pytz==2016.4
+requests==2.10.0
 scikit-learn==0.17.1
 scipy==0.17.1
+six==1.10.0
 sklearn==0.0
 wheel==0.24.0
+xlrd==0.9.4
