@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 # Load the room occupancy dataset
 occupancy = os.path.join('data','occupancy','datatraining.txt')
