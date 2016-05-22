@@ -3,8 +3,9 @@ import zipfile
 import requests
 
 OCCUPANCY = ('http://bit.ly/ddl-occupancy-dataset', 'occupancy.zip')
-CREDIT    = ('http://bit.ly/ddl-credit-dataset', 'credit.xls')
-CONCRETE  = ('http://bit.ly/ddl-concrete-data', 'concrete.xls')
+CREDIT = ('http://bit.ly/ddl-credit-dataset', 'credit.xls')
+CONCRETE = ('http://bit.ly/ddl-concrete-data', 'concrete.xls')
+
 
 def download_data(url, name, path='data'):
     if not os.path.exists(path):
@@ -23,5 +24,6 @@ def download_all(path='data'):
     z = zipfile.ZipFile(os.path.join(path, 'occupancy.zip'))
     z.extractall(os.path.join(path, 'occupancy'))
 
-path='data'
+
+path = 'data'
 download_all(path)
